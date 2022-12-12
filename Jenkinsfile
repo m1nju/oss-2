@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'oss2022fall'
-        CLUSTER_NAME = 'kube'
+        PROJECT_ID = 'wise-diagram-364506'
+        CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
         CREDENTIALS_ID = 'gke'
     }
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("pjbear/hello:${env.BUILD_ID}")
+                    myapp = docker.build("sarah1153/hello:${env.BUILD_ID}")
                 }
             }
         }
