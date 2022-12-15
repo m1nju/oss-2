@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'wise-diagram-364506'
+        PROJECT_ID = 'gg-map-371616'
         CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
         CREDENTIALS_ID = 'gke'
